@@ -1,0 +1,249 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arapey', serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in forwards; /* Efek transisi halaman */
+}
+
+/* Transisi Halaman */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #6e7e8d;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #6e7e8d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-media {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-media a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
+
+/* Index Page - Hero Section */
+.hero-section {
+    background-image: url('images/index-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-section .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 20px 30px;
+    font-size: 18px;
+    color: #333;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+/* Form Containers (Login & Signup) */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 120px; /* Menyesuaikan agar berada di bawah header */
+}
+
+.form-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #6e7e8d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #4f5f6d;
+}
+
+.form-container p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-container p a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.form-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Section */
+.profile-container {
+    margin-top: 120px; /* Untuk menyesuaikan dengan header */
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-container .profile-info {
+    margin-bottom: 20px;
+}
+
+.profile-container .profile-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.profile-container .profile-info strong {
+    font-weight: bold;
+}
+
+.profile-container .profile-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-container .profile-actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #6e7e8d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.profile-container .profile-actions button:hover {
+    background-color: #4f5f6d;
+    transform: scale(1.05); /* Efek membesar saat hover */
+}
+
+.profile-container .profile-actions button:active {
+    transform: scale(0.95); /* Efek mengecil saat diklik */
+}

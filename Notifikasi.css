@@ -1,0 +1,131 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    background-image: url('images/index-background.png'); /* Sesuaikan dengan path gambar */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Membuat layout vertikal */
+    min-height: 100vh; /* Minimum tinggi layar */
+    margin: 0;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6e7e8d;
+    color: white;
+    padding: 15px 20px;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  header .icons img {
+    width: 24px; /* Ukuran icon lebih kecil */
+    height: 24px; /* Tambahkan agar proporsional */
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  header .logo p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    background-color: #ff6b6b;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #ff8c8c;
+  }
+  
+  /* Notifikasi Container */
+  .notifikasi-container {
+    flex: 1; /* Memastikan bagian ini fleksibel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%; /* Hampir menyentuh ujung kanan dan kiri */
+    max-width: 1200px; /* Batasi agar tidak terlalu besar di layar lebar */
+    margin: 0 auto; /* Tengah secara horizontal */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparansi latar belakang */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .notifikasi-container h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .notifikasi-card {
+    width: 100%; /* Memenuhi lebar kontainer */
+    margin: 10px 0;
+    padding: 15px 20px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    text-align: left; /* Teks rata kiri */
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  .notifikasi-card:hover {
+    background-color: #d4d4d4; /* Warna saat hover */
+    cursor: pointer;
+  }
+  
+  /* Footer */
+footer {
+    background-color: #6e7e8d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Membuat footer tetap di bawah */
+    width: 100%;
+  }
+  
+  footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  footer .social-media a img {
+    width: 24px;
+    height: 24px;
+  }

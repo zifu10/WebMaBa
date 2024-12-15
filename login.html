@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>MABA</h1>
+      <p>Mari Bangkit</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="https://wa.me/6282389074739?text=Halo%20MABA%20Mari%20Bangkit">Contact</a></li>
+        <li><a href="https://facebook.com" target="_blank"><img src="images/Facebook.png" alt="Facebook"></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a></li>
+        <li><a href="https://linkedin.com" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Form Login -->
+  <div class="form-container">
+    <h2>Login</h2>
+    <form action="login_process.php" method="post">
+      <label for="name">Username :</label>
+      <input type="name" id="name" name="name" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Pesan untuk belum memiliki akun -->
+    <p>Belum memiliki akun? <a href="signup.html">Daftar di sini</a>.</p>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Mari Bangkit. Semua Hak Dilindungi. Kebijakan Privasi.</p>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank"><img src="images/Facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn"></a>
+    </div>
+  </footer>
+</body>
+</html>

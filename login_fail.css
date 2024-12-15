@@ -1,0 +1,88 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arapey', serif;
+    background-color: #f9f9f9;
+    background-image: url('images/index-background.png'); /* Ganti dengan path gambar */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Failed Container */
+.failed-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Latar belakang transparan */
+    z-index: 9999;
+}
+
+/* Failed Box */
+.failed-box {
+    background-color: #6e7e8d;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    max-width: 90%; /* Untuk layar kecil */
+    color: white;
+    position: relative;
+}
+
+/* Failed Icon */
+.failed-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.failed-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Text */
+.failed-box p {
+    font-size: 16px;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Button */
+.failed-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc3545; /* Merah tombol */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.failed-button:hover {
+    background-color: #c82333;
+    transform: translateY(-3px);
+}

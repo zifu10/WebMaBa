@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kategori Donasi - MABA</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="icons">
+        <a href="Notifikasi.html">
+          <img src="images/Mail.png" alt="Mail Icon" class="icon">
+        </a>
+        <a href="profile.php">
+          <img src="images/User.png" alt="User Icon" class="icon">
+        </a>
+      </div>
+      <div class="logo-text">
+        <h1>MABA</h1>
+        <p>Mari Bangkit</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="KategoriDonasi.html">Donasi</a></li>
+        <li><a href="Transparansi.html">Transparansi</a></li>
+        <li><a href="PengajuanBantuan.php">Pengajuan Bantuan</a></li>
+        <li><a href="LaporanProyek.html">Laporan Proyek</a></li>
+        <li><a href="InformasiEdukatif.html">Informasi Edukatif</a></li>
+        <li><a href="komunitas.html">Komunitas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/KategoriDonasi.png" alt="Donasi Background">
+    <div class="hero-text">
+      <h1>KATEGORI DONASI</h1>
+    </div>
+  </section>
+
+  <!-- Kategori Donasi -->
+  <main>
+    <div class="carousel">
+      <div class="carousel-card" style="background-image: url('images/PembangunanInfrastruktur.png');">
+        <div class="carousel-content">
+          <h2>Pembangunan Infrastruktur</h2>
+          <p>Mari bergandengan tangan untuk membangun infrastruktur yang mendukung kemajuan masyarakat.</p>
+        </div>
+      </div>
+      <div class="carousel-card" style="background-image: url('images/Pendidikan.png');">
+        <div class="carousel-content">
+          <h2>Pendidikan</h2>
+          <p>Tanpa pendidikan, seseorang seperti burung tanpa sayap. Mari dukung akses pendidikan untuk semua.</p>
+        </div>
+      </div>
+      <div class="carousel-card" style="background-image: url('images/PelatihanKerja.png');">
+        <div class="carousel-content">
+          <h2>Pelatihan Kerja</h2>
+          <p>Anda tidak bisa membeli hidup seseorang dengan uang, tetapi membantu menciptakan peluang hidup.</p>
+        </div>
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="donation-categories">
+      <div class="category-card">
+        <img src="images/PembangunanInfrastruktur.png" alt="Pembangunan Infrastruktur">
+        <h2>Pembangunan Infrastruktur</h2>
+        <p>Mari bergandengan tangan untuk membangun infrastruktur yang mendukung kemajuan masyarakat.</p>
+        <blockquote>“Nilai kebaikan bukan seberapa besar kita memberi, tapi seberapa tulus kita peduli.” – Mother Teresa</blockquote>
+        <button>Donate Now</button>
+      </div>
+      <div class="category-card">
+        <img src="images/Pendidikan.png" alt="Pendidikan">
+        <h2>Pendidikan</h2>
+        <p>Tanpa pendidikan, seseorang seperti burung tanpa sayap. Mari dukung akses pendidikan untuk semua.</p>
+        <blockquote>“Ada banyak orang yang kelaparan, dan Tuhan tidak bisa datang dalam bentuk apa pun selain sepotong roti.” – Mahatma Gandhi</blockquote>
+        <button>Donate Now</button>
+      </div>
+      <div class="category-card">
+        <img src="images/PelatihanKerja.png" alt="Pelatihan Kerja">
+        <h2>Pelatihan Kerja</h2>
+        <p>Anda tidak bisa membeli hidup seseorang dengan uang, tetapi membantu menciptakan peluang hidup.</p>
+        <blockquote>“Menyumbang uang adalah baik, tetapi mendukung pengembangan keterampilan jauh lebih berarti.” – Anonim</blockquote>
+        <button>Donate Now</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 Mari Bangkit. Semua Hak Dilindungi. Kebijakan Privasi.</p>
+      <div class="footer-info">
+        <p>Alamat: Jl. MH Thamrin No.10, Jakarta Pusat, DKI Jakarta</p>
+        <p>Email: contact@maba.org | Telepon: (+62) 21 1234 5678</p>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/Instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="images/LinkedIn.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+  let currentIndex = 0;
+  let autoSlideTimer;
+
+  function showSlide(index) {
+    const slides = document.querySelectorAll(".carousel-card");
+    const totalSlides = slides.length;
+
+    // Wrap around index
+    if (index >= totalSlides) {
+      currentIndex = 0;
+    } else if (index < 0) {
+      currentIndex = totalSlides - 1;
+    } else {
+      currentIndex = index;
+    }
+
+    slides.forEach((slide, i) => {
+      slide.style.transform = `translateX(${(i - currentIndex) * 100}%)`;
+    });
+
+    // Reset the timer for auto-slide
+    resetAutoSlideTimer();
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+
+  function resetAutoSlideTimer() {
+    clearTimeout(autoSlideTimer);
+    autoSlideTimer = setTimeout(() => {
+      nextSlide();
+    }, 5000); // Set to 5 seconds of inactivity
+  }
+
+  // Initialize the first slide and set auto-slide
+  showSlide(currentIndex);
+  resetAutoSlideTimer();
+</script>

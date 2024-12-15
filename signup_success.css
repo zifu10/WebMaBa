@@ -1,0 +1,87 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arapey', serif;
+    background-color: #f9f9f9;
+    background-image: url('images/index-background.png'); /* Ganti dengan path gambar */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Success Container */
+.success-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Latar belakang transparan */
+    z-index: 9999; /* Pastikan box berada di atas elemen lain */
+}
+
+/* Success Box */
+.success-box {
+    background-color: #6e7e8d;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    max-width: 90%; /* Untuk layar kecil */
+    position: relative;
+}
+
+/* Success Icon */
+.success-icon {
+    font-size: 80px; /* Membuat ceklis lebih besar */
+    color: #28a745; /* Warna hijau */
+    display: block;
+    margin: 0 auto 20px auto; /* Memastikan ceklis berada di tengah */
+}
+
+/* Heading */
+.success-box h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Text */
+.success-box p {
+    font-size: 16px;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Button */
+.success-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745; /* Hijau tombol */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.success-button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}

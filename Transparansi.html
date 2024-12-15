@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparansi Penggunaan Donasi</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="icons">
+        <a href="Notifikasi.html">
+          <img src="images/Mail.png" alt="Mail Icon" class="icon">
+        </a>
+        <a href="profile.php">
+          <img src="images/User.png" alt="User Icon" class="icon">
+        </a>
+      </div>
+      <div class="logo-text">
+        <h1>MABA</h1>
+        <p>Mari Bangkit</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="KategoriDonasi.html">Donasi</a></li>
+        <li><a href="Transparansi.html">Transparansi</a></li>
+        <li><a href="PengajuanBantuan.php">Pengajuan Bantuan</a></li>
+        <li><a href="LaporanProyek.html">Laporan Proyek</a></li>
+        <li><a href="InformasiEdukatif.html">Informasi Edukatif</a></li>
+        <li><a href="Komunitas.html">Komunitas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <a href="Home.html">Home</a> > <a href="Transparansi.html">Transparansi</a>
+  </div>
+
+  <!-- Transparansi Section -->
+  <section class="transparansi">
+    <h2>TRANSPARANSI Penggunaan Donasi</h2>
+    <p>Bertransparansi bukan hanya soal pemberian, tetapi juga soal menjadi bagian dari perubahan. Setiap donasi Anda memiliki dampak nyata bagi kehidupan orang lain.</p>
+
+    <!-- Filter -->
+    <div class="filter">
+        <label for="kategori">Kategori Donasi</label>
+        <select id="kategori">
+          <option value="infrastruktur">Pembangunan Infrastruktur</option>
+          <option value="pendidikan">Pendidikan</option>
+          <option value="pelatihan">Pelatihan Kerja</option>
+        </select>
+        <label for="tanggal">Tanggal</label>
+        <input type="text" id="tanggal" placeholder="DD/MM/YYYY">
+        <button>Cari</button>
+    </div>
+
+    <!-- Daftar Proyek -->
+    <div class="projects">
+      <div class="project-card">
+        <p class="date">12 Mei 2024</p>
+        <h3>Program Pendidikan untuk Anak di Pedalaman</h3>
+        <ul>
+          <li>Pembelian buku dan alat tulis: 40%</li>
+          <li>Pelatihan guru: 35%</li>
+          <li>Peralatan kelas: 25%</li>
+        </ul>
+        <p class="status">Status Proyek: Sedang Berjalan</p>
+        <a href="#" class="details">Details <span>&#8250;</span></a>
+      </div>
+
+      <div class="project-card">
+        <p class="date">25 April 2024</p>
+        <h3>Pembangunan Sarana Air Bersih di Desa Tertinggal</h3>
+        <ul>
+          <li>Pembelian material bangunan: 60%</li>
+          <li>Biaya tenaga kerja: 30%</li>
+          <li>Pelatihan warga lokal: 10%</li>
+        </ul>
+        <p class="status">Status Proyek: Selesai</p>
+        <a href="#" class="details">Details <span>&#8250;</span></a>
+      </div>
+
+      <div class="project-card">
+        <p class="date">3 Juni 2024</p>
+        <h3>Bantuan Medis untuk Daerah Terdampak Bencana</h3>
+        <ul>
+          <li>Pembelian obat-obatan: 50%</li>
+          <li>Alat medis: 30%</li>
+          <li>Biaya transportasi: 20%</li>
+        </ul>
+        <p class="status">Status Proyek: Sedang Berjalan</p>
+        <a href="#" class="details">Details <span>&#8250;</span></a>
+      </div>
+      <!-- Tambahkan lebih banyak project-card jika diperlukan -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Mari Bangkit. Semua Hak Dilindungi. Kebijakan Privasi.</p>
+    <div class="social-media">
+      <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/Instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/LinkedIn.png" alt="LinkedIn"></a>
+    </div>
+  </footer>
+</body>
+</html>

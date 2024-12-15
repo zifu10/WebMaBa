@@ -1,0 +1,200 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh;
+    background-image: url('images/index-background.png'); /* Ganti dengan path gambar */
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #6e7e8d;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Pastikan berada di atas elemen lainnya */
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header .logo p {
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Profil Pengguna Section */
+.profile-section {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 80px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-section h2 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .profile-section p {
+    color: #555;
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .profile-section p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Tombol */
+  .profile-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .profile-buttons .btn {
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .profile-buttons .btn:hover {
+    background-color: #ff8c8c;
+    transform: scale(1.05);
+  }
+  
+  .profile-buttons .btn:active {
+    background-color: #ff4c4c;
+    transform: scale(1);
+  }
+  
+  .profile-buttons .delete-account {
+    background-color: #ff4c4c;
+  }
+  
+  .profile-buttons .delete-account:hover {
+    background-color: #e60000;
+  }
+  
+  .profile-buttons .logout {
+    background-color: #333;
+  }
+  
+  .profile-buttons .logout:hover {
+    background-color: #555;
+  }
+  
+  .profile-buttons .back-home {
+    background-color: #6e7e8d;
+  }
+  
+  .profile-buttons .back-home:hover {
+    background-color: #8892a0;
+  }
+
+/* Tombol Hapus Akun */
+.profile-buttons .delete-account {
+    background-color: #ff4c4c;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-buttons .delete-account:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+}
+
+.profile-buttons .delete-account:active {
+    background-color: #e60000;
+    transform: scale(1);
+}
+
+/* Footer */
+footer {
+  background-color: #6e7e8d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-media a img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+.profile-photo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-photo .profile-icon {
+  font-size: 150px;
+  color: #ccc;
+}

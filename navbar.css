@@ -1,0 +1,55 @@
+/* Header */
+header {
+    background-color: #6e7e8d;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Memberi jarak antara ikon dan teks logo */
+  }
+  
+  .icons {
+    display: flex;
+    gap: 10px; /* Memberi jarak antara ikon mail dan user */
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2); /* Animasi saat hover pada ikon */
+  }
+  
+  /* Navigasi Utama */
+  nav {
+    margin-left: auto; /* Memastikan navigasi berada di sebelah kanan */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Memberi jarak antar item menu */
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #ff6b6b;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ff8c8c;
+  }
+  
